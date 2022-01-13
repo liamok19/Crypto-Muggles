@@ -1,3 +1,27 @@
-body{
-    background-color: #202125;
-};
+/* Variables */
+:root {
+    --font-family: Arial, Helvetica, sans-serif;
+    --normal-font: 500;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: rgb(44, 31, 216);
+    --secondary-color: #30d32a;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+  /* Variables end */
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body{
+      background-color: #202125;
+  };
+
+
