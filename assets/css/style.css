@@ -17,6 +17,7 @@
 
 /* Colour */
 :root {
+    --primary-font-col: rgb(179, 179, 179);
     --primary-color: rgb(44, 31, 216);
     --secondary-color: #30d32a;
     --primary-shadow: #8b8eaf;
@@ -35,6 +36,8 @@
 
 body{
   background-color: var(--bg-dark);
+  color: var(--primary-font-col);
+  text-align: center;
 }
 
 html {
@@ -81,3 +84,41 @@ button:hover{
   color: var(--bg-color);
 }
 
+input {
+  max-width: 60%;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+  .body {
+    height: 100%;
+
+} 
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container-fluid {
+    display: block;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  [class*="col-"] {
+    width: 80%;
+  }
+
+  .col-12.col-md-4.col-xl-3 {
+    order: 2;
+    display: block;
+  }
+
+  .col-12.col-md-8.col-xl-9 {
+    order: 1;
+  }
+ 
+}
+
+/* End Media Query */
