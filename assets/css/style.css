@@ -1,27 +1,83 @@
-/* Variables */
+/* General */
 :root {
-    --font-family: Arial, Helvetica, sans-serif;
     --normal-font: 500;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #fcfcfc;
+    --top-margin: 2rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+    
+  }
+  /* Font */
+:root {
+    --primary-font:'Poppins', sans-serif;
+    --secondary-font:'Roboto', sans-serif;
+}
+
+/* Colour */
+:root {
     --primary-color: rgb(44, 31, 216);
     --secondary-color: #30d32a;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
-    --bottom-margin: 0.5rem;
-    --bottom-margin-2: 1rem;
-    --line-height: 1.7rem;
-    --transition: 0.3s;
-  }
-  /* Variables end */
-  
-  html {
+    --bg-color: #fcfcfc;
+    --bg-dark:#202125;  
+    --button-hover-colour: rgb(0,136,169,1.4);
+    --button-colour: #3de5c5;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background-color: var(--bg-dark);
+}
+
+html {
     scroll-behavior: smooth;
   }
 
-  body{
-      background-color: #202125;
-  };
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: var(--top-margin) 2rem 2rem;
+}
 
+button{
+  letter-spacing: 3px;
+  padding: 10px 40px;
+  margin-left: 20px;
+  color: aliceblue;
+  font-family: var(--secondary-font);
+  background-color: var(--button-colour);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover{
+  background-color: var(--button-hover-colour);
+  color: #080808 ;
+}
+
+.logIn-btn {
+  margin-top: 1rem;
+}
+
+.logo {
+  height: 7rem;
+  width: 30rem;
+}
+
+.currentTime {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  margin-top: 1rem;
+  color: var(--bg-color);
+}
 
