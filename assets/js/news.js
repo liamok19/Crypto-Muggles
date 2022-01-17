@@ -22,10 +22,13 @@ var timeEl5 = document.querySelector('.timeofPublish4');
 var creatorValue5 = document.querySelector('.newsName4');
 var articleTitleEl5= document.querySelector('.title4');
 //API key inside a var to call on multiple times if required. 
-var  APIKey="apikey=pub_3607c98c284f7ae81a7c5cb1e10e5d4eb329";
+var  APIKey="apikey=pub_3691ecb37bd967f43f3029e801b78e631f93";
+// planAAPIkey = pub_3607c98c284f7ae81a7c5cb1e10e5d4eb329
+// planBAPIke= pub_3691ecb37bd967f43f3029e801b78e631f93
 
+//https://newsdata.io/api/1/news?apikey=pub_3607c98c284f7ae81a7c5cb1e10e5d4eb329&q=cryptocurrency
 //fetch from newsdata API, attaching the API var and the parameter for cryptocurrency
-fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency' )
+fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency&country=us,au,ca&language=en' )
     // fetch('https://cryptopanic.com/api//v1/posts/?auth_token=65359dbd6e66041b361c14cef4b02d200ad629cd&public=true')
     .then(response => response.json())
     // .then(data => console.log (data))
@@ -72,4 +75,20 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency' )
 
 })
 
+var btn0 = document.getElementById("articleNewsRow0");
+var btn1 = document.getElementById("articleNewsRow1");
+var btn2 = document.getElementById("articleNewsRow2");
+var btn3 = document.getElementById("articleNewsRow3");
+var btn4 = document.getElementById("articleNewsRow4");
 
+console.log(btn0 + 0);
+console.log(btn1+ 1);
+console.log(btn2+ 2);
+console.log(btn3+ 3);
+console.log(btn4+ 4);
+
+btn0.addEventListener("click", function (event) {
+    event.preventDefault();
+    this.textContent = "hello"
+
+})
