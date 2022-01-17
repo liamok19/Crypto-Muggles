@@ -89,7 +89,18 @@ section {
 }
 .marketButton:hover {
   box-shadow: var(--button-colour) 0 0px 4px 4px;
+}
+
+.newsBtn {
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  transition: ease-in-out 0.2s;
+}
+.newsBtn:hover {
+  box-shadow: var(--button-colour) 0 0px 4px 4px;
 } 
+
 .min-100-vh {
   min-height: 100vh;
 }
@@ -166,6 +177,14 @@ section {
 #newsBtn:hover{
   background-color: var(--button-hover-colour);
   color: #080808 ;
+}
+
+.newstitle {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 40px;
 }
 
 /* Sign Up */
