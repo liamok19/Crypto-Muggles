@@ -10,13 +10,13 @@ Our website will feature the latest updates on cryptocurrency like pricing and r
 
 ## Team Roles 
 
+## Look
+![wireframe_figma](./assets/images/WeatherDashboard.gif)
+
 ## Strategy 
 | Task       | Progress      | 
 | ------------- |:-------------:| 
 | Github title | Not yet  Start| 
 
 
-## Credits
-
 ## Reference Images/Gifs
-![wireframe_figma](./assets/images/WeatherDashboard.gif)
