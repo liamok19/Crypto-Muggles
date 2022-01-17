@@ -7,6 +7,8 @@ var currentSymbol = 'BTCUSDT';
 var currentInterval = '1d';
 
 
+
+
 //define the chart properties
 var chartProperties = {
     width: 800,
