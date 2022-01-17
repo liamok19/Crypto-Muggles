@@ -31,7 +31,7 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency' )
     // .then(data => console.log (data))
     .then(data => {
         var timeValue = data ['results'][0]['pubDate'];
-        var sourceValue = data ['results'][0]['creator'][0];
+        var sourceValue = data ['results'][0]['source_id'];
         var titleValue = data ['results'][0]['title'];
 
         timeEl.innerHTML=timeValue;
@@ -39,7 +39,7 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency' )
         articleTitleEl.innerHTML= titleValue;
 
         var timeValue2 = data ['results'][1]['pubDate'];
-        var sourceValue2 = data ['results'][1]['creator'][0];
+        var sourceValue2 = data ['results'][1]['source_id'];
         var titleValue2 = data ['results'][1]['title'];
 
         timeEl2.innerHTML=timeValue2;
@@ -47,7 +47,7 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency' )
         articleTitleEl2.innerHTML= titleValue2;
 
         var timeValue3 = data ['results'][2]['pubDate'];
-        var sourceValue3 = data ['results'][2]['creator'][0];
+        var sourceValue3 = data ['results'][2]['source_id'];
         var titleValue3 = data ['results'][2]['title'];
 
         timeEl3.innerHTML= timeValue3;
@@ -55,7 +55,7 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency' )
         articleTitleEl3.innerHTML= titleValue3;
 
         var timeValue4 = data ['results'][3]['pubDate'];
-        var sourceValue4 = data ['results'][3]['creator'][0];
+        var sourceValue4 = data ['results'][3]['source_id'];
         var titleValue4 = data ['results'][3]['title'];
 
         timeEl4.innerHTML= timeValue4;
@@ -63,7 +63,7 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency' )
         articleTitleEl4.innerHTML= titleValue4;
 
         var timeValue5 = data ['results'][4]['pubDate'];
-        var sourceValue5 = data ['results'][4]['creator'][0];
+        var sourceValue5 = data ['results'][4]['source_id'];
         var titleValue5 = data ['results'][4]['title'];
 
         timeEl5.innerHTML= timeValue5;
