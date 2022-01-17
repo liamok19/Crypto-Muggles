@@ -15,7 +15,7 @@
     <title>Crypto Muggles</title>
 </head>
 
-<body>
+<body class="flex-column min-100-vh">
     <!-- Header -->
     <header class="container-fluid text-dark mb-5 p-1 header">
         <img class="logo" src="./assets/images/headerIcon.png" alt="Header Icon">
@@ -66,18 +66,14 @@
             <div class="col-12 col-md-8 col-xl-9 position-relative" style="left: 8vw;">
                 <div>
                     <!-- created line graph -->
-                    <h2 class="text-light"> Chart</h2>
+                    <h2 class="text-light" id="chartText"> Chart</h2>
 
                 </div>
-                <div style="position: absolute;">
-                    <!-- created news button for special feature -->
-                    <button>News</button>
 
-                </div>
                 <div class="container">
-                    <div class="text-center align-item-center justify-content-center text-light">
+                    <div class="text-center align-item-center justify-content-center text-light headerCoin">
                         <!-- added coin icon -->
-                        <img id="coin-img" src="./assets/images/bitcoin.png" width="30" height="30"
+                        <img id="coin-img" src="./assets/images/bitcoin.png" width="40px" height="40px"
                             class="d-inline-nlock align-top" alt="bitcoin-logo">
                         <h4 class="text-light d-inline-block" id="currency">Bitcoin</h4>
                     </div>
@@ -92,6 +88,11 @@
                         <button type= "button" class="btn-interval btn btn-group btn-info">1m</button>
                         <button type= "button" class="btn-interval btn btn-group btn-info">1d</button>
                         <button type= "button" class="btn-interval btn btn-group btn-info">1w</button>
+                    </div>
+                    <div>
+                        <!-- created news button for special feature -->
+                        <button id="newsBtn">News</button>
+    
                     </div>
                     <!-- created buttons for different timeframe -->
                 </div>
@@ -108,27 +109,27 @@
             <div id="newsContainer" class="text-light col-12 col-md-8 col-xl-9">
                 <h2 class="newstitle"> News</h2>
                 <table class="table table-striped table-dark">
-                    <tr id="articleNewsRow0">                 
+                    <tr class="newsBtn" id="articleNewsRow0">                 
                         <td class="timeofPublish0"></td>
                         <td class="newsName0" ></td>
                         <td class="title0"></td>
                     </tr>    
-                    <tr id="articleNewsRow1">
+                    <tr class="newsBtn" id="articleNewsRow1">
                         <td class="timeofPublish1"></td>
                         <td class="newsName1"></td>
                         <td class="title1"></td>
                     </tr>
-                    <tr id="articleNewsRow2">
+                    <tr class="newsBtn" id="articleNewsRow2">
                         <td class="timeofPublish2"></td>
                         <td class="newsName2"></td>
                         <td class="title2"></td>
                     </tr>
-                    <tr id="articleNewsRow3">
+                    <tr class="newsBtn" id="articleNewsRow3">
                         <td class="timeofPublish3"></td>
                         <td class="newsName3"></td>
                         <td class="title3"></td>
                     </tr>
-                    <tr id="articleNewsRow4">
+                    <tr class="newsBtn" id="articleNewsRow4">
                         <td class="timeofPublish4"></td>
                         <td class="newsName4"></td>
                         <td class="title4"></td>
@@ -151,10 +152,14 @@
                 </div>
             </div>
             <div class="socialMedia">
-                <img href="https://github.com/liamok19/Crypto-Muggles" src="./assets/images/facebook.png" class="footer-facebook footer-icon" alt="facebook icon">
-                <img href="https://github.com/liamok19/Crypto-Muggles" src="./assets/images/twitter.png" class="footer-twitter footer-icon" alt="twitter icon">
-                <img href="https://github.com/liamok19/Crypto-Muggles" src="./assets/images/instagram.png" class="footer-instagram footer-icon"
+                <a href="https://github.com/liamok19/Crypto-Muggles">
+                    <img href="" src="./assets/images/facebook.png" class="footer-facebook footer-icon" alt="facebook icon">
+                </a><a href="https://github.com/liamok19/Crypto-Muggles">
+                    <img href="" src="./assets/images/twitter.png" class="footer-twitter footer-icon" alt="twitter icon">
+                </a><a href="https://github.com/liamok19/Crypto-Muggles"></a>
+                    <img href="https://github.com/liamok19/Crypto-Muggles" src="./assets/images/instagram.png" class="footer-instagram footer-icon"
                     alt="instagram icon">
+                </a>
             </div>
         </div>
         <!-- Last line of will be copyrights -->
