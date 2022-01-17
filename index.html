@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&family=Poppins:wght@300;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" type="image" href="./assets/images/CryptoMugglesIcon.png">
     <title>Crypto Muggles</title>
-</head> 
+</head>
+
 <body>
     <!-- Header -->
     <header class="container-fluid text-dark mb-5 p-1 header">
@@ -28,31 +32,31 @@
                     <h3 class="text-light">Market</h3>
                     <tr>
                         <td scope="col" id="coin-symbol-btc"></td>
-                        <td scope="col">BitCoin</td>
+                        <td class="td-symbol" scope="col">BitCoin</td>
                         <td scope="col" id="coin-price-btc"></td>
                         <td scope="col" id="coin-change-btc"></td>
                     </tr>
                     <tr>
                         <td scope="col" id="coin-symbol-eth"></td>
-                        <td scope="col">Ethereum</td>
+                        <td class="td-symbol" scope="col">Ethereum</td>
                         <td scope="col" id="coin-price-eth"></td>
                         <td scope="col" id="coin-change-eth"></td>
                     </tr>
                     <tr>
                         <td scope="col" id="coin-symbol-ada"></td>
-                        <td scope="col">Cardano</td>
+                        <td class="td-symbol" scope="col">Cardano</td>
                         <td scope="col" id="coin-price-ada"></td>
                         <td scope="col" id="coin-change-ada"></td>
                     </tr>
                     <tr>
                         <td scope="col" id="coin-symbol-sol"></td>
-                        <td scope="col">Solana</td>
+                        <td class="td-symbol" scope="col">Solana</td>
                         <td scope="col" id="coin-price-sol"></td>
                         <td scope="col" id="coin-change-sol"></td>
                     </tr>
                     <tr>
                         <td scope="col" id="coin-symbol-doge"></td>
-                        <td scope="col">Dogecoin</td>
+                        <td class="td-symbol" scope="col">Dogecoin</td>
                         <td scope="col" id="coin-price-doge"></td>
                         <td scope="col" id="coin-change-doge"></td>
                     </tr>
@@ -63,41 +67,29 @@
                 <div>
                     <!-- created line graph -->
                     <h2 class="text-light"> Chart</h2>
-                    <div style="position: absolute; left: 40vw; bottom: 40vh;">
-                        <!-- created news button for special feature -->
-                        <button>News</button>
-                    </div>
+                </div>
+                <div style="position: absolute;">
+                    <!-- created news button for special feature -->
+                    <button>News</button>
                 </div>
                 <div class="container">
                     <div class="text-center align-item-center justify-content-center text-light">
                         <!-- added coin icon -->
-                        <img src="./assets/images/bitcoin-logo.jpeg" width="30" height="30" class="d-inline-nlock align-top"
-                            alt="bitcoin-logo">
+                        <img id="coin-img" src="./assets/images/bitcoin-logo.jpeg" width="30" height="30"
+                            class="d-inline-nlock align-top" alt="bitcoin-logo">
                         <h4 class="text-light d-inline-block" id="currency">Bitcoin</h4>
                     </div>
-
-                    <div>
-                        <!-- made options for different coin line graphs -->
-                        <select id="cryptoList" class="custom-select-sm mb-3">
-                            <option value="0">Bitcoin</option>
-                            <option value="1">Ethereum</option>
-                            <option value="2">Cardano</option>
-                            <option value="3">Solana</option>
-                            <option value="4">Dogecoin</option>
-                        </select>
-                    </div>
-                 
                 </div>
 
                 <div>
-                    <canvas id="line-chart" height="300" width="800"
-                        style="border: solid white; position: absolute; top: 12vh;"></canvas>
-                </div>
-                <!-- created buttons for different timeframe -->
-                <div class="d-flex align-item-center" id="timeframeButtons">
-                    <button type= "button" class="btn btn-group btn-info" id="24h">24h</button>
-                    <button type= "button" class="btn btn-group btn-info" id="7d">7d</button>
-                    <button type= "button" class="btn btn-group btn-info" id="1y">1Y</button>
+                    <div id="tvchart"></div>
+                    <!-- <canvas id="line-chart" height="300" width="800" style="border: solid white;"></canvas> -->
+                    <div class="d-flex align-item-center" id="timeframeButtons">
+                        <button type= "button" class="btn-interval btn btn-group btn-info">1m</button>
+                        <button type= "button" class="btn-interval btn btn-group btn-info">1d</button>
+                        <button type= "button" class="btn-interval btn btn-group btn-info">1w</button>
+                    </div>
+                    <!-- created buttons for different timeframe -->
                 </div>
             </div>
     </section>
@@ -112,7 +104,7 @@
             </div>
             <div class="col-12 col-md-8 col-xl-9">
                 <h2> News</h2>
-                <div class="row1">                    
+                <div class="row1">
                     <h1 class="timeofPublish"></h1>
                     <p class="newsName"></p>
                     <p class="title"></p>
@@ -143,11 +135,12 @@
             <div class="socialMedia">
                 <img href="" src="./assets/images/facebook.png" class="footer-facebook footer-icon" alt="facebook icon">
                 <img href="" src="./assets/images/twitter.png" class="footer-twitter footer-icon" alt="twitter icon">
-                <img href="" src="./assets/images/instagram.png" class="footer-instagram footer-icon" alt="instagram icon">
+                <img href="" src="./assets/images/instagram.png" class="footer-instagram footer-icon"
+                    alt="instagram icon">
             </div>
         </div>
         <!-- Last line of will be copyrights -->
-        <div class="copyRight"> &copy; 2022   Crypto Muggles</div>
+        <div class="copyRight"> &copy; 2022 Crypto Muggles</div>
     </footer>
 
     <!-- linked all js file with html -->
@@ -155,7 +148,10 @@
     <script src="assets/js/news.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script> -->
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
     <script src="assets/js/chart.js"></script>
 
 </body>
-</html>  
+
+</html>

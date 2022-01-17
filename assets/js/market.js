@@ -20,6 +20,8 @@ function roundToTwo(num) {
     return +(Math.round(num + "e+2") + "e-2");
 }
 
+const symbols = ['btc', 'eth', 'ada', 'xrp'];
+
 
 // get the value of each coin's price change percentage through a certain parameter
 wsBtcChange.onmessage = (event) => {
