@@ -183,7 +183,7 @@ input {
 }
 
 /* News Container additions */
-.row1 {
+/* .row1 {
   display: flex;
   flex-direction: row;
 }
@@ -202,7 +202,7 @@ input {
 .row5 {
   display: flex;
   flex-direction: row;
-}
+} */
 .timeofPublish0 {
   font-size: x-small;
 }
@@ -235,10 +235,13 @@ input {
   font-size: small;
 }
 #newsContainer{
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  left: 200px;
+  top: 90px;
 }
-
+.newstitle {
+  position: left;
+}
 /* Media Queries */
 
 @media only screen and (max-width: 1200px) {
