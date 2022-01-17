@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" type="image" href="./assets/images/CryptoMugglesIcon.png">
     <title>Crypto Muggles</title>
@@ -20,7 +21,7 @@
     </header>
 
     <!-- First Column will be for market and sign up card -->
-    <section class="container my-5">
+    <section class="container my-5 topRow">
         <div class="row">
             <div class="col-12 col-md-4 col-xl-3">
                 <!-- created market table -->
@@ -64,8 +65,6 @@
                     <!-- created line graph -->
                     <h2 class="text-light"> Chart</h2>
                     <div style="position: absolute; left: 40vw; bottom: 40vh;">
-                        <!-- created news button for special feature -->
-                        <button>News</button>
                     </div>
                 </div>
                 <div class="container">
@@ -77,6 +76,8 @@
                     </div>
 
                     <div>
+                        <!-- //button for the news container. Aiming to delete in the future. This is a placeholder class name. -->
+                        <button class="searchBtn">News, ex Sign up! </button>
                         <!-- made options for different coin line graphs -->
                         <select id="cryptoList" class="custom-select-sm mb-3">
                             <option value="0">Bitcoin</option>
@@ -103,12 +104,11 @@
     </section>
     <section class="container">
         <div class="row">
-            <div class="col-12 col-md-4 col-xl-3">
+            <div class="col-12 col-md-4 col-xl-3" id="signUpForm">
                 <h2> Sign Up</h2>
-                <input>
-                <input>
-                <!-- //button for the news container. Aiming to delete in the future. This is a placeholder class name. -->
-                <button class="searchBtn">Sign up! </button>
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email">
+                <button class="signUpBtn">Sign Up</button>
             </div>
             <div class="col-12 col-md-8 col-xl-9">
                 <h2> News</h2>
