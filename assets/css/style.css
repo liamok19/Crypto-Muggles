@@ -240,7 +240,7 @@ input {
   top: 90px;
 }
 .newstitle {
-  position: left;
+  text-align: left;
 }
 /* Media Queries */
 
