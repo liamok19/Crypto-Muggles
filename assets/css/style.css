@@ -75,6 +75,21 @@ section {
   width: 40vh;
   width: 90%;
 }
+.coin-symbol-i {
+  display: none;
+}
+
+.td-symbol {
+  cursor: pointer;
+}
+.marketButton {
+  width: 100px;
+  height: 50px;
+  transition: ease-in-out 0.2s;
+}
+.marketButton:hover {
+  box-shadow: var(--button-colour) 0 0px 4px 4px;
+} 
 
 .logIn-btn {
   margin-top: 1rem;
@@ -96,6 +111,16 @@ section {
 .topRow {
   padding-top: 5rem;
 }
+
+/* Market Card */
+.marketText {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 40px;
+}
+
 
 /* Sign Up */
 
