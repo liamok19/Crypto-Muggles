@@ -13,6 +13,7 @@
 :root {
     --primary-font:'Poppins', sans-serif;
     --secondary-font:'Roboto', sans-serif;
+    --third-font: 'Poppins', sans-serif;
 }
 
 /* Colour */
@@ -46,7 +47,7 @@ html {
 
 header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin: var(--top-margin) 2rem 2rem;
     
@@ -56,11 +57,11 @@ button{
   letter-spacing: 3px;
   padding: 10px 40px;
   margin-left: 20px;
-  color: aliceblue;
-  font-family: var(--secondary-font);
+  color: black;
+  font-family: var(--third-font);
   background-color: var(--button-colour);
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -70,7 +71,7 @@ button:hover{
 }
 
 section {
-  height: 30vh;
+  height: 35vh;
   width: 40vh;
   width: 90%;
 }
@@ -92,6 +93,45 @@ section {
   color: var(--bg-color);
 }
 
+.topRow {
+  padding-top: 5rem;
+}
+
+/* Sign Up */
+
+#signUpForm {
+  font-family: var(--third-font);
+  color: var(--primary-font-col);
+  margin: 2rem 0;
+  border-radius: 10px;
+  padding-top: 7.5rem;
+  transition: ease-in-out 0.3s;
+}
+
+h2 {
+  font-family: var(--third-font);
+  font-weight: 300;
+}
+
+input {
+  letter-spacing: 1.5px;
+  max-width: 100%;
+  display: block;
+  width: 320px;
+  height: 50px;
+  font-family: var(--third-font);
+  color: antiquewhite;
+  font-weight: 350;
+  border: 1px solid var(--button-colour);
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  padding-left: 1rem;
+  margin: 2rem 0;
+}
+
+
 /* FOOTER */
 .socialMedia {
   cursor: pointer;
@@ -108,7 +148,6 @@ section {
 }
 .footer-icon:hover {
   background-color: var(--button-colour);
-  
 }
 
 #email-icon {
@@ -143,9 +182,7 @@ section {
   font-family: var(--primary-font);
 }
 
-input {
-  max-width: 60%;
-}
+
 
 /* Media Queries */
 
