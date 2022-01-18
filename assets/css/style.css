@@ -75,9 +75,7 @@ button:hover{
 }
 
 section {
-  height: 35vh;
-  width: 40vh;
-  width: 90%;
+  width: 100%;
 }
 .coin-symbol-i {
   display: none;
@@ -198,7 +196,7 @@ section {
   color: var(--primary-font-col);
   margin: 2rem 0;
   border-radius: 10px;
-  padding-top: 7.5rem;
+  padding-top: 2rem;
   transition: ease-in-out 0.3s;
 }
 
@@ -328,11 +326,7 @@ input {
 .title4 {
   font-size: small;
 }
-#newsContainer{
-  position: relative;
-  left: 200px;
-  top: 90px;
-}
+
 .newstitle {
   text-align: left;
 }
