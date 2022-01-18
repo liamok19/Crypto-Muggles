@@ -1,7 +1,3 @@
-// 2. create the chart with defined properties and bind it with the DOM element
-// 3. add the candlestick series
-// 4. set the data and render it.
-
 // created a var for the default chart when it will be shown when the page is loaded
 var currentSymbol = 'BTCUSDT';
 var currentInterval = '1d';
