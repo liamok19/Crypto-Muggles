@@ -15,6 +15,18 @@ let wsAdaChange = new WebSocket('wss://stream.binance.com:9443/ws/adausdt@ticker
 let wsSolChange = new WebSocket('wss://stream.binance.com:9443/ws/solusdt@ticker');
 let wsDogeChange = new WebSocket('wss://stream.binance.com:9443/ws/dogeusdt@ticker');
 
+// created variables for each coins coin change
+let coinPercentageBtc = document.getElementById('coin-change-btc');
+let coinPercentageEth = document.getElementById('coin-change-eth');
+let coinPercentageAda = document.getElementById('coin-change-ada');
+let coinPercentageSol = document.getElementById('coin-change-sol');
+let coinPercentageDoge = document.getElementById('coin-change-doge');
+let lastPercentageBtc;
+let lastPercentageEth;
+let lastPercentageAda;
+let lastPercentageSol;
+let lastPercentageDoge;
+
 // created a function to round numbers to two decimal places
 function roundToTwo(num) {
     return +(Math.round(num + "e+2") + "e-2");
@@ -27,25 +39,52 @@ const symbols = ['btc', 'eth', 'ada', 'xrp'];
 wsBtcChange.onmessage = (event) => {
     let stockObject = JSON.parse(event.data);
     document.getElementById('coin-change-btc').innerHTML = roundToTwo(stockObject.P) + '%';
+
+    // change the color of the percentage according to its increasing or decreasing value
+    var percentage = roundToTwo(stockObject.P) + '%';
+    coinPercentageBtc.innerText = percentage;
+    coinPercentageBtc.style.color = !lastPercentageBtc|| lastPercentageBtc === percentage ? 'white' : percentage > lastPercentageBtc ? 'green' : 'red';
+    lastPercentageBtc = percentage;
 }
+
 wsEthChange.onmessage = (event) => {
     let stockObject = JSON.parse(event.data);
     document.getElementById('coin-change-eth').innerHTML = roundToTwo(stockObject.P) + '%';
+
+    var percentage = roundToTwo(stockObject.P) + '%';
+    coinPercentageEth.innerText = percentage;
+    coinPercentageEth.style.color = !lastPercentageEth|| lastPercentageEth === percentage ? 'white' : percentage > lastPercentageEth ? 'green' : 'red';
+    lastPercentageEth = percentage;
 }
 
 wsAdaChange.onmessage = (event) => {
     let stockObject = JSON.parse(event.data);
     document.getElementById('coin-change-ada').innerHTML = roundToTwo(stockObject.P) + '%';
+
+    var percentage = roundToTwo(stockObject.P) + '%';
+    coinPercentageAda.innerText = percentage;
+    coinPercentageAda.style.color = !lastPercentageAda|| lastPercentageAda === percentage ? 'white' : percentage > lastPercentageAda ? 'green' : 'red';
+    lastPercentageAda = percentage;
 }
 
 wsSolChange.onmessage = (event) => {
     let stockObject = JSON.parse(event.data);
     document.getElementById('coin-change-sol').innerHTML = roundToTwo(stockObject.P) + '%';
+
+    var percentage = roundToTwo(stockObject.P) + '%';
+    coinPercentageSol.innerText = percentage;
+    coinPercentageSol.style.color = !lastPercentageSol|| lastPercentageSol === percentage ? 'white' : percentage > lastPercentageSol ? 'green' : 'red';
+    lastPercentageSol = percentage;
 }
 
 wsDogeChange.onmessage = (event) => {
     let stockObject = JSON.parse(event.data);
     document.getElementById('coin-change-doge').innerHTML = roundToTwo(stockObject.P) + '%';
+
+    var percentage = roundToTwo(stockObject.P) + '%';
+    coinPercentageDoge.innerText = percentage;
+    coinPercentageDoge.style.color = !lastPercentageDoge|| lastPercentageDoge === percentage ? 'white' : percentage > lastPercentageDoge ? 'green' : 'red';
+    lastPercentageDoge = percentage;
 }
 
 // get the value of each coin's price and symbol through a certain parameter

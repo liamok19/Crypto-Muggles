@@ -79,6 +79,42 @@ section {
   width: 40vh;
   width: 90%;
 }
+.coin-symbol-i {
+  display: none;
+}
+
+.td-symbol {
+  cursor: pointer;
+}
+.marketButton {
+  width: 100px;
+  height: 50px;
+  transition: ease-in-out 0.2s;
+}
+.marketButton:hover {
+  box-shadow: var(--button-colour) 0 0px 4px 4px;
+}
+
+.newsBtn {
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  transition: ease-in-out 0.2s;
+}
+.newsBtn:hover {
+  box-shadow: var(--button-colour) 0 0px 4px 4px;
+} 
+
+.min-100-vh {
+  min-height: 100vh;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
 .logIn-btn {
   margin-top: 1rem;
@@ -99,6 +135,60 @@ section {
 
 .topRow {
   padding-top: 5rem;
+}
+
+/* Market Card */
+.marketText {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.topRow {
+  align-self: flex-end
+}
+
+/* Chart Card */
+
+#chartText {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.headerCoin {
+  text-align: left;
+}
+
+
+/* News Card */
+#newsBtn{
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  margin-left: 20px;
+  color: black;
+  font-family: var(--third-font);
+  background-color: var(--button-colour);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#newsBtn:hover{
+  background-color: var(--button-hover-colour);
+  color: #080808 ;
+}
+
+.newstitle {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 40px;
 }
 
 /* Sign Up */
@@ -244,7 +334,7 @@ input {
   top: 90px;
 }
 .newstitle {
-  position: left;
+  text-align: left;
 }
 /* Media Queries */
 
