@@ -36,6 +36,8 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency&country=us
         var timeValue = data ['results'][0]['pubDate'];
         var sourceValue = data ['results'][0]['source_id'];
         var titleValue = data ['results'][0]['title'];
+        var articleLink = data ['results'][0]['link'];
+        // console.log(articleLink);
 
         timeEl.innerHTML=timeValue;
         creatorValue.innerHTML= sourceValue;
@@ -44,6 +46,7 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency&country=us
         var timeValue2 = data ['results'][1]['pubDate'];
         var sourceValue2 = data ['results'][1]['source_id'];
         var titleValue2 = data ['results'][1]['title'];
+        var articleLink2 = data ['results'][1]['link'];
 
         timeEl2.innerHTML=timeValue2;
         creatorValue2.innerHTML= sourceValue2;
@@ -52,6 +55,7 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency&country=us
         var timeValue3 = data ['results'][2]['pubDate'];
         var sourceValue3 = data ['results'][2]['source_id'];
         var titleValue3 = data ['results'][2]['title'];
+        var articleLink3 = data ['results'][2]['link'];
 
         timeEl3.innerHTML= timeValue3;
         creatorValue3.innerHTML= sourceValue3;
@@ -60,6 +64,7 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency&country=us
         var timeValue4 = data ['results'][3]['pubDate'];
         var sourceValue4 = data ['results'][3]['source_id'];
         var titleValue4 = data ['results'][3]['title'];
+        var articleLink4 = data ['results'][3]['link'];
 
         timeEl4.innerHTML= timeValue4;
         creatorValue4.innerHTML= sourceValue4;
@@ -68,49 +73,80 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency&country=us
         var timeValue5 = data ['results'][4]['pubDate'];
         var sourceValue5 = data ['results'][4]['source_id'];
         var titleValue5 = data ['results'][4]['title'];
+        var articleLink5 = data ['results'][4]['link'];
 
         timeEl5.innerHTML= timeValue5;
         creatorValue5.innerHTML= sourceValue5;
         articleTitleEl5.innerHTML= titleValue5;
 
+    var btn1 = document.getElementById("articleNewsRow0");
+    var btn2 = document.getElementById("articleNewsRow1");
+    var btn3 = document.getElementById("articleNewsRow2");
+    var btn4 = document.getElementById("articleNewsRow3");
+    var btn5 = document.getElementById("articleNewsRow4");
 
+    console.log(btn1);
+    console.log(btn2);
+    console.log(btn3);
+    console.log(btn4);
+    console.log(btn5);
 
-    var btn0 = document.getElementById("articleNewsRow0");
-    var btn1 = document.getElementById("articleNewsRow1");
-    var btn2 = document.getElementById("articleNewsRow2");
-    var btn3 = document.getElementById("articleNewsRow3");
-    var btn4 = document.getElementById("articleNewsRow4");
-
-    console.log(btn0 + 0);
-    console.log(btn1+ 1);
-    console.log(btn2+ 2);
-    console.log(btn3+ 3);
-    console.log(btn4+ 4);
-
-    btn0.addEventListener("click", function (event) {
-        event.preventDefault();
-        this.textContent = "hello"
-
-    })
+    // var newsAttribute = event.target.getAttribute('articlenews');
 
     btn1.addEventListener("click", function (event) {
         event.preventDefault();
-        this.textContent = "there"
+        // this.textContent = "hello"
+        btn1.innerHTML = articleLink;
+
 
     })
+
     btn2.addEventListener("click", function (event) {
         event.preventDefault();
-        this.textContent = "you're"
+        // this.textContent = "there"
+        btn2.innerHTML = articleLink2;
+
 
     })
     btn3.addEventListener("click", function (event) {
         event.preventDefault();
-        this.textContent = "in"
+        // this.textContent = "you're"
+        btn3.innerHTML = articleLink3;
 
     })
     btn4.addEventListener("click", function (event) {
         event.preventDefault();
-        this.textContent = "Crypto"
+        // this.textContent = "in"
+        btn4.innerHTML = articleLink4;
+    })
+    btn5.addEventListener("click", function (event) {
+        event.preventDefault();
+        // this.textContent = "Crypto"
+        btn5.innerHTML = articleLink5;        
 
     })
 })
+
+var buttonClickHandler = function (event) {
+    var language = event.target.getAttribute('data-language');
+  
+    if (language) {
+      getFeaturedRepos(language);
+  
+      repoContainerEl.textContent = '';
+    }
+  };
+
+  var getFeaturedRepos = function (language) {
+    var apiUrl = 'https://api.github.com/search/repositories?q=' + language + '+is:featured&sort=help-wanted-issues';
+  
+    fetch(apiUrl).then(function (response) {
+      if (response.ok) {
+        response.json().then(function (data) {
+          displayRepos(data.items, language);
+        });
+      } else {
+        alert('Error: ' + response.statusText);
+      }
+    });
+  };
