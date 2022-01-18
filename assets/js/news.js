@@ -96,57 +96,33 @@ fetch('https://newsdata.io/api/1/news?' + APIKey + '&q=cryptocurrency&country=us
     btn1.addEventListener("click", function (event) {
         event.preventDefault();
         // this.textContent = "hello"
-        btn1.innerHTML = articleLink;
-
+        // btn1.innerHTML = articleLink;
+        window.location.href = articleLink;
 
     })
 
     btn2.addEventListener("click", function (event) {
         event.preventDefault();
         // this.textContent = "there"
-        btn2.innerHTML = articleLink2;
+        window.location.href = articleLink2;
 
 
     })
     btn3.addEventListener("click", function (event) {
         event.preventDefault();
         // this.textContent = "you're"
-        btn3.innerHTML = articleLink3;
+        window.location.href = articleLink3;
 
     })
     btn4.addEventListener("click", function (event) {
         event.preventDefault();
         // this.textContent = "in"
-        btn4.innerHTML = articleLink4;
+        window.location.href = articleLink4;
     })
     btn5.addEventListener("click", function (event) {
         event.preventDefault();
         // this.textContent = "Crypto"
-        btn5.innerHTML = articleLink5;        
+        window.location.href = articleLink5;        
 
     })
 })
-
-var buttonClickHandler = function (event) {
-    var language = event.target.getAttribute('data-language');
-  
-    if (language) {
-      getFeaturedRepos(language);
-  
-      repoContainerEl.textContent = '';
-    }
-  };
-
-  var getFeaturedRepos = function (language) {
-    var apiUrl = 'https://api.github.com/search/repositories?q=' + language + '+is:featured&sort=help-wanted-issues';
-  
-    fetch(apiUrl).then(function (response) {
-      if (response.ok) {
-        response.json().then(function (data) {
-          displayRepos(data.items, language);
-        });
-      } else {
-        alert('Error: ' + response.statusText);
-      }
-    });
-  };
