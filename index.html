@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" type="image" href="./assets/images/CryptoMugglesIcon.png">
@@ -25,34 +29,33 @@
 <body>
     <div class="body dark"> 
     <div class="container chart">
-      <div class="menu">
+        <div class="menu">
+    </div>
+    <div class="row toggle">
+    <div class="col">
+        <p>DARK MODE</p>
+    </div>
+    <label class="switch col">
+        <input type="checkbox" id="theme-switcher">
+        <span class="slider round"></span>
+    </label>
+    <div class="col">
+        <p>LIGHT MODE</p>
+    </div>
+    </div>
+    <div class="row">
+    </div>
+    <div class="row">
+    <div>
     
-      </div>
-      <div class="row toggle">
-        <div class="col">
-          <p>DARK MODE</p>
-        </div>
-        <label class="switch col">
-          <input type="checkbox" id="theme-switcher">
-          <span class="slider round"></span>
-        </label>
-        <div class="col">
-          <p>LIGHT MODE</p>
-        </div>
-      </div>
-      <div class="row">
-        </div>
-      <div class="row">
-        <div>
-      
-          <p id= "light-mode"></p>
-          <p id = "dark-mode"></p>
-        </div>
-        <div class="footer">
-      
-        </div>
-      </div>
-      
+        <p id= "light-mode"></p>
+        <p id = "dark-mode"></p>
+    </div>
+    <div class="footer">
+    
+    </div>
+    </div>
+    
     </div>
     </div>
     </header>
