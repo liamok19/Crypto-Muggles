@@ -1,6 +1,6 @@
-//Syed Test scrpt push to github
+// //Syed Test scrpt push to github
 
-// Access toggle switch HTML element
+// // Access toggle switch HTML element
 var themeSwitcher = document.querySelector("#theme-switcher");
 var container = document.querySelector(".body");
 
@@ -22,3 +22,9 @@ themeSwitcher.addEventListener("click", function() {
     container.setAttribute("class", "dark");
   }
 });
+
+var timeAEDT = document.querySelector(".currentTime");
+
+timeAEDT.innerHTML = moment().format("h:mm:ss A ") + " AEDT";
+// // moment().format("dddd, MMMM Do YYYY, h:mm:ss a"); // "Sunday, February 14th 2010, 3:25:50 pm"
+
