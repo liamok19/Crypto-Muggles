@@ -2,12 +2,12 @@
 var currentSymbol = 'BTCUSDT';
 var currentInterval = '1d';
 
-
+var domElement = document.getElementById('tvchart');
 
 
 //define the chart properties
 var chartProperties = {
-    width: 800,
+    width: domElement.clientWidth,
     height: 300,
     grid: {
         vertLines: {
@@ -26,6 +26,14 @@ var chartProperties = {
         secondVisible: false,
     }
 }
+
+// This is the code from timocov's comment, which just work. Put it after createChart and setData. and rename chartContainer to your chart container HTML element.
+  // Make Chart Responsive with screen resize
+  new ResizeObserver(entries => {
+    if (entries.length === 0 || entries[0].target !== domElement) { return; }
+    const newRect = entries[0].contentRect;
+    chart.applyOptions({ height: newRect.height, width: newRect.width });
+    }).observe(domElement);
 
 // created variables for DOM elements
 var domElement = document.getElementById('tvchart');
