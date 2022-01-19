@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link
@@ -32,7 +33,7 @@
         <div class="currentTime" id="currentTime"></div>
         
         <div class="rightHeader">
-            <a class="logIn-btn" href="#logIn"><button>Log In</button></a>
+            <a  href="#logIn"><button class="logIn-btn">Log In</button></a>
         
             <div id="switcher">
                 <input type="checkbox" class="checkbox" id="chk" />
@@ -85,7 +86,7 @@
                     </thead>
                 </table>
             </div>
-            <div class="col-12 col-md-8 col-xl-9 position-relative" style="left: 8vw;">
+            <div class="col-12 col-md-8 col-xl-9 position-relative">
                 <div>
                     <!-- created line graph -->
                     <h2 class="text-light" id="chartText"> Chart</h2>
@@ -105,22 +106,24 @@
                 <div>
                     <div id="tvchart"></div>
                     <!-- <canvas id="line-chart" height="300" width="800" style="border: solid white;"></canvas> -->
-                    <div class="dropdown">
-                    <div class="d-flex align-item-center" id="timeframeButtons">
-                        <button type= "button" class="btn-interval btn btn-group btn-info">1m</button>
-                        <button type= "button" class="btn-interval btn btn-group btn-info">1d</button>
-                        <button type= "button" class="btn-interval btn btn-group btn-info">1w</button>
+                    <div class="time-group d-flex align-item-center" id="timeframeButtons">
+                        <button type= "button" class="timeBtn btn-interval btn btn-group btn-info">1m</button>
+                        <button type= "button" class="timeBtn btn-interval btn btn-group btn-info">1d</button>
+                        <button type= "button" class="timeBtn btn-interval btn btn-group btn-info">1w</button>
                     </div>
-                </div>
+
+            
             </div>
     </section>
     <section class="container">
         <div class="row">
-            <div class="col-12 col-md-4 col-xl-3" id="signUpForm">
-                <h2> Sign Up</h2>
-                <input type="text" placeholder="Full Name" id="full-name">
-                <input type="text" placeholder="Email" id="email">
-                <button class="signUpBtn" id="sign-up-btn">Sign Up</button>
+            <div class="col-12 col-md-4 col-xl-3 signUpForm" id="signUpForm" >
+                <h2 id="signUpLine"> Sign Up</h2>
+                <div id="secondLayer">
+                    <input type="text" placeholder="Full Name" id="full-name">
+                    <input type="text" placeholder="Email" id="email">
+                    <button class="signUpBtn" id="sign-up-btn">Sign Up</button>
+                </div>
             </div>
             <div id="newsContainer" class="text-light col-12 col-md-8 col-xl-9">
                 <h2 class="newstitle"> News</h2>
@@ -191,6 +194,7 @@
     <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
     <script src="assets/js/chart.js"></script>
     <script src="assets/js/localstorage.js"></script>
+    
    
 </body>
 

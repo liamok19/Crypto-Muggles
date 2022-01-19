@@ -8,7 +8,7 @@ var domElement = document.getElementById('tvchart');
 //define the chart properties
 var chartProperties = {
     width: domElement.clientWidth,
-    height: 300,
+    height: 330,
     grid: {
         vertLines: {
             color: 'rgba(197, 203, 206, 0.5)',
@@ -18,7 +18,7 @@ var chartProperties = {
         },
     },
     layout: {
-        backgroundColor: '#000000',
+        backgroundColor: '#202125',
         textColor: 'rgba(255, 255, 255, 0.9)',
     },
     timeScale: {
@@ -55,7 +55,7 @@ function changeChartTitle(symbol) {
     let currencyName;
 
     if (symbol.toUpperCase() === "BTCUSDT") {
-        logo = "./assets/images/bitcoin-logo.jpeg";
+        logo = "./assets/images/bitcoin.png";
         currencyName = 'Bitcoin';
     }
     if (symbol.toUpperCase() === "ETHUSDT") {
@@ -67,7 +67,7 @@ function changeChartTitle(symbol) {
         currencyName = 'Cardano';
     }
     if (symbol.toUpperCase() === "SOLUSDT") {
-        logo = "./assets/images/solana-logo.png";
+        logo = "./assets/images/solana.png";
         currencyName = 'Solana';
     }
     if (symbol.toUpperCase() === "DOGEUSDT") {

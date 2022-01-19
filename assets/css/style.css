@@ -36,15 +36,9 @@
 }
 
 body{
-  background-color: var(--bg-dark);
+  background: var(--bg-dark);
   color: var(--primary-font-col);
   text-align: center;
-}
-
-/* Market Card */
-
-.marketCard{
-  justify-self: left;
 }
 
 /* .dark{
@@ -66,23 +60,27 @@ header{
 button{
   letter-spacing: 3px;
   padding: 10px 40px;
-  margin-left: 20px;
   color: black;
   font-family: var(--third-font);
   background-color: var(--button-colour);
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 button:hover{
-  background-color: var(--button-hover-colour);
+  background-color: rgb(181, 250, 243);
   color: #080808 ;
 }
 
 section {
   width: 100%;
 }
+.container {
+  max-width: 1300px;
+}
+
+
 .coin-symbol-i {
   display: none;
 }
@@ -122,6 +120,11 @@ section {
 
 .logIn-btn {
   margin-top: 1rem;
+  padding: 10px 20px;
+  color: aliceblue;
+  background-color: transparent;
+  border: 1px solid var(--button-colour);
+
 }
 
 .logo {
@@ -144,15 +147,16 @@ section {
 /* Switcher Button */
 body.light {
 	background: #C4DDE4;
+  transition: 0.2s linear;
 }
 
 .checkbox {
 	opacity: 0;
-	position: absolute;
+	display: contents;
 }
 
 .label {
-	background-color: #111;
+	background-color: #343434;
 	border-radius: 50px;
 	cursor: pointer;
 	display: flex;
@@ -222,9 +226,24 @@ body.light {
 }
 
 .headerCoin {
-  text-align: left;
+  display: table-row;
+  
 }
 
+img {
+  margin-right: 1rem;
+}
+
+
+.timeBtn {
+  background: transparent;
+  border-color: var(--button-colour);
+  margin-left: -2px;
+}
+
+.time-group {
+  justify-self: flex-end;
+}
 
 /* News Card */
 #newsBtn{
@@ -271,21 +290,25 @@ h2 {
 input {
   letter-spacing: 1.5px;
   max-width: 100%;
-  display: block;
   width: 320px;
   height: 50px;
   font-family: var(--third-font);
-  color: antiquewhite;
+  color: whitesmoke;
   font-weight: 350;
   border: 1px solid var(--button-colour);
   border-radius: 5px;
-  background: transparent;
+  background: #00626c1f;
   outline: none;
-  font-size: 20px;
+  font-size: 17.5px;
   padding-left: 1rem;
-  margin: 2rem 0;
+  margin: 12px 0;
 }
 
+
+
+#fullName{
+  color: #fcfcfc;
+}
 
 /* FOOTER */
 .socialMedia {
@@ -398,17 +421,60 @@ input {
 @media only screen and (max-width: 1200px) {
   .body {
     height: 100%;
-
+  
 } 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 778px) {
   /* For mobile phones: */
   .container-fluid {
     display: block;
   }
 
+  .logIn-btn {
+    margin-top: 1rem;
+    margin-bottom: 35px;
+    padding: 5px 7.5px;
+    /* color: aliceblue;
+    background-color: transparent;
+    border: 1px solid var(--button-colour); */
+  }
+
+  #secondLayer{
+    display: inline-grid;
+  }
+  .rightHeader{
+    display: inline-grid;
+    justify-items: center;
+  }
+
+  .marketText{
+    text-align: center;
+  }
+
+  #chartText {
+    text-align: center;
+  }
+
+  .firstFooter {
+    display: inline-block;
+  }
   .container {
     text-align: center;
+  }
+
+  #fullName {
+    display: inline-flex;
+  }
+
+  .signUpForm {
+    display: inline-block;
+  }
+  .newstitle {
+    text-align: center;
+  }
+
+  .currentTime {
+    display: none;
   }
 
   [class*="col-"] {
@@ -422,6 +488,10 @@ input {
 
   .col-12.col-md-8.col-xl-9 {
     order: 1;
+  }
+
+  .col-12 {
+    padding: 0.5rem 2.25rem;
   }
  
 }};
