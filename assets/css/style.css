@@ -41,6 +41,12 @@ body{
   text-align: center;
 }
 
+/* Market Card */
+
+.marketCard{
+  justify-self: left;
+}
+
 /* .dark{
   background-color: var(--bg-dark);
 } */
@@ -134,6 +140,63 @@ section {
 .topRow {
   padding-top: 5rem;
 }
+
+/* Switcher Button */
+body.light {
+	background: #C4DDE4;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+}
+
+#switcher {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+.rightHeader {
+  position: inherit;
+}
+
 
 /* Market Card */
 .marketText {
@@ -363,109 +426,3 @@ input {
  
 }};
 
-
-
-/* Dark Mode */
-.dark {
-  background-color:#243447;
-  height: 100vh;
-  color: #bebebe
- 
-}
-
-.dark li a {
-  color: #bebebe;
-}
-
-.dark li a:hover {
-  background-color: #111;
-}
-
-/* Light Mode */
-.light {
-  background-color: #C4DDE4;
-  color: black;
- 
-}
-
-.light li a {
-  color: black;
-}
-
-.light li a:hover {
-  background-color: rgb(131, 176, 212);
-}
-
-/* Styling the Switch button */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(14, 13, 13);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: RGB #bad5dd;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: rgb(210, 29, 114);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px rgb(175, 248, 4);
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(22px);
-  -ms-transform: translateX(22px);
-  transform: translateX(22px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.row {
-  margin: 20px;
-  display: flex;
-}
-.col {
-  margin: 20px;
-}
-
-
-/* End Media Query */
