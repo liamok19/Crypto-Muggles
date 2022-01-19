@@ -4,6 +4,9 @@
 chk.addEventListener('change', () => {
 	document.body.classList.toggle('light');
 });
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
 
 var timeAEDT = document.querySelector(".currentTime");
 

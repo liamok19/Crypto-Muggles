@@ -140,13 +140,14 @@ section {
   color: var(--bg-color);
 }
 
-.topRow {
-  padding-top: 5rem;
-}
 
 /* Switcher Button */
 body.light {
 	background: #C4DDE4;
+  transition: 0.2s linear;
+}
+body.dark {
+  background: var(--bg-dark);
   transition: 0.2s linear;
 }
 
@@ -421,13 +422,15 @@ input {
 @media only screen and (max-width: 1200px) {
   .body {
     height: 100%;
-  
 } 
+  header {
+    display: block;
+  }
 
 @media only screen and (max-width: 778px) {
   /* For mobile phones: */
   .container-fluid {
-    display: block;
+    display: grid;
   }
 
   .logIn-btn {
@@ -445,6 +448,7 @@ input {
   .rightHeader{
     display: inline-grid;
     justify-items: center;
+    margin-top: 2.75rem;
   }
 
   .marketText{
@@ -493,6 +497,15 @@ input {
   .col-12 {
     padding: 0.5rem 2.25rem;
   }
- 
+ .logo {
+    height: 5rem;
+    width: 20rem;
+  }
 }};
 
+@media only screen and (max-width: 448px) {
+  .logo {
+    height: 5rem;
+    width: 20rem;
+  }
+}
