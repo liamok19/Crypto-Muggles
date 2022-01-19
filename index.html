@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
     <script
@@ -23,41 +29,20 @@
     <!-- Header -->
     <header class="container-fluid text-dark mb-5 p-1 header">
         <img class="logo" src="./assets/images/headerIcon.png" alt="Header Icon">
-        <div class="currentTime"></div>
-        <a class="logIn-btn" href="#logIn"><button>Log In</button></a>
+        <div class="currentTime" id="currentTime"></div>
         
-<body>
-    <div class="body dark"> 
-    <div class="container chart">
-        <div class="menu">
-    </div>
-    <div class="row toggle">
-    <div class="col">
-        <p>DARK MODE</p>
-    </div>
-    <label class="switch col">
-        <input type="checkbox" id="theme-switcher">
-        <span class="slider round"></span>
-    </label>
-    <div class="col">
-        <p>LIGHT MODE</p>
-    </div>
-    </div>
-    <div class="row">
-    </div>
-    <div class="row">
-    <div>
-    
-        <p id= "light-mode"></p>
-        <p id = "dark-mode"></p>
-    </div>
-    <div class="footer">
-    
-    </div>
-    </div>
-    
-    </div>
-    </div>
+        <div class="rightHeader">
+            <a class="logIn-btn" href="#logIn"><button>Log In</button></a>
+        
+            <div id="switcher">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </div>
     </header>
 
     <!-- First Column will be for market and sign up card -->
@@ -126,12 +111,6 @@
                         <button type= "button" class="btn-interval btn btn-group btn-info">1d</button>
                         <button type= "button" class="btn-interval btn btn-group btn-info">1w</button>
                     </div>
-                    <div>
-                        <!-- created news button for special feature -->
-                        <button id="newsBtn">News</button>
-    
-                    </div>
-                    <!-- created buttons for different timeframe -->
                 </div>
             </div>
     </section>
@@ -208,7 +187,7 @@
     <script src="assets/js/news.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
     <script src="assets/js/chart.js"></script>
     <script src="assets/js/localstorage.js"></script>
