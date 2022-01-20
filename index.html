@@ -29,7 +29,7 @@
 <body class="body dark flex-column min-100-vh">
     <!-- Header -->
     <header class="container-fluid text-dark mb-5 p-1 header">
-        <img class="logo" src="./assets/images/headerIcon.png" alt="Header Icon">
+        <img class="logo" id="logo" src="./assets/images/headerIcon.png" alt="Header Icon">
         <div class="currentTime" id="currentTime"></div>
         
         <div class="rightHeader">
@@ -52,7 +52,7 @@
             <div class="col-12 col-md-4 col-xl-3 marketCard">
                 <!-- created market table -->
                 <table class="table table-striped table-dark">
-                    <h3 class="text-light marketText">Market</h3>
+                    <h3 class="text-light marketText title">Market</h3>
                     <tr class="marketButton">
                         <td scope="col" class="coin-symbol-i" id="coin-symbol-btc"></td>
                         <td class="td-symbol" scope="col">BitCoin</td>
@@ -89,7 +89,7 @@
             <div class="col-12 col-md-8 col-xl-9 position-relative">
                 <div>
                     <!-- created line graph -->
-                    <h2 class="text-light" id="chartText"> Chart</h2>
+                    <h2 class="text-light title" id="chartText"> Chart</h2>
 
                 </div>
 
@@ -116,7 +116,7 @@
             </div>
     </section>
     <section class="container">
-        <div class="row">
+        <div class="row secondRow">
             <div class="col-12 col-md-4 col-xl-3 signUpForm" id="signUpForm" >
                 <h2 id="signUpLine"> Sign Up</h2>
                 <div id="secondLayer">
@@ -126,30 +126,30 @@
                 </div>
             </div>
             <div id="newsContainer" class="text-light col-12 col-md-8 col-xl-9">
-                <h2 class="newstitle"> News</h2>
+                <h2 class="newstitle title"> News</h2>
                 <table class="table table-striped table-dark">
                     <tr class="newsBtn" id="articleNewsRow0">                 
-                        <td class="timeofPublish0"></td>
+                        <td class="decsTime timeofPublish0"></td>
                         <td class="newsName0" ></td>
                         <td class="title0"></td>
                     </tr>    
                     <tr class="newsBtn" id="articleNewsRow1">
-                        <td class="timeofPublish1"></td>
+                        <td class="decsTime timeofPublish1"></td>
                         <td class="newsName1"></td>
                         <td class="title1"></td>
                     </tr>
                     <tr class="newsBtn" id="articleNewsRow2">
-                        <td class="timeofPublish2"></td>
+                        <td class="decsTime timeofPublish2"></td>
                         <td class="newsName2"></td>
                         <td class="title2"></td>
                     </tr>
                     <tr class="newsBtn" id="articleNewsRow3">
-                        <td class="timeofPublish3"></td>
+                        <td class="decsTime timeofPublish3"></td>
                         <td class="newsName3"></td>
                         <td class="title3"></td>
                     </tr>
                     <tr class="newsBtn" id="articleNewsRow4">
-                        <td data-news="articlenews" class="timeofPublish4"></td>
+                        <td data-news="articlenews" class="decsTime timeofPublish4"></td>
                         <td class="newsName4"></td>
                         <td class="title4"></td>
                     </tr>

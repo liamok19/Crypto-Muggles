@@ -23,6 +23,7 @@
     --secondary-color: #30d32a;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
+    --font-title: #26a69a;
     --bg-color: #fcfcfc;
     --bg-dark:#202125;  
     --button-hover-colour: rgb(0,136,169,1.4);
@@ -54,8 +55,10 @@ header{
     justify-content: space-around;
     align-items: center;
     margin: var(--top-margin) 2rem 2rem;
+    max-width: 1650px;
     
 }
+
 
 button{
   letter-spacing: 3px;
@@ -76,6 +79,7 @@ button:hover{
 section {
   width: 100%;
 }
+
 .container {
   max-width: 1300px;
 }
@@ -85,12 +89,13 @@ section {
   display: none;
 }
 
+
 .td-symbol {
   cursor: pointer;
 }
 .marketButton {
-  width: 100px;
-  height: 50px;
+  width: 120px;
+  height: 70px;
   transition: ease-in-out 0.2s;
 }
 .marketButton:hover {
@@ -131,8 +136,8 @@ section {
   height: 7rem;
   width: 30rem;
   cursor: pointer;
+ 
 }
-
 .currentTime {
   font-family: var(--primary-font);
   font-size: 20px;
@@ -144,12 +149,14 @@ section {
 /* Switcher Button */
 body.light {
 	background: #C4DDE4;
+  color: #202125;
   transition: 0.2s linear;
 }
 body.dark {
   background: var(--bg-dark);
-  transition: 0.2s linear;
+  transition: 0.2s linear; 
 }
+
 
 .checkbox {
 	opacity: 0;
@@ -272,6 +279,8 @@ img {
   font-size: 40px;
 }
 
+
+
 /* Sign Up */
 
 #signUpForm {
@@ -323,11 +332,11 @@ input {
   width: 3rem;
   margin: 1.5rem;
   border-radius: 60px;
-  transition: ease-in-out .3s;
+  transition: all .3s;
 }
 .footer-icon:hover {
-  background-color: var(--button-colour);
-}
+  box-shadow:  var(--button-colour) 0 0 4px 4px;
+} 
 
 #email-icon {
   height: 1.2rem;
@@ -352,7 +361,7 @@ input {
 
 .firstFooter {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 
@@ -427,10 +436,19 @@ input {
     display: block;
   }
 
-@media only screen and (max-width: 778px) {
+  .row {
+    margin: -19px;
+  }
+
+  
+@media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .container-fluid {
     display: grid;
+  }
+  
+  .row {
+    margin: 0 -7px;
   }
 
   .logIn-btn {
