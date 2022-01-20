@@ -22,7 +22,7 @@ var timeEl5 = document.querySelector('.timeofPublish4');
 var creatorValue5 = document.querySelector('.newsName4');
 var articleTitleEl5= document.querySelector('.title4');
 //API key inside a var to call on multiple times if required. 
-var  APIKey="apikey=pub_3691ecb37bd967f43f3029e801b78e631f93";
+var  APIKey="apikey=pub_3607c98c284f7ae81a7c5cb1e10e5d4eb329";
 // planAAPIkey = pub_3607c98c284f7ae81a7c5cb1e10e5d4eb329
 // planBAPIke= pub_3691ecb37bd967f43f3029e801b78e631f93
 
