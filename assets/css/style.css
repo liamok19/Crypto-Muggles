@@ -80,6 +80,7 @@ section {
   width: 100%;
 }
 
+
 .container {
   max-width: 1300px;
 }
@@ -129,15 +130,14 @@ section {
   color: aliceblue;
   background-color: transparent;
   border: 1px solid var(--button-colour);
-
 }
 
 .logo {
   height: 7rem;
   width: 30rem;
   cursor: pointer;
- 
 }
+
 .currentTime {
   font-family: var(--primary-font);
   font-size: 20px;
@@ -225,12 +225,13 @@ body.dark {
 
 /* Chart Card */
 
-#chartText {
+.chartText {
   text-align: left;
   margin-bottom: 2.5rem;
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 40px;
+  
 }
 
 .headerCoin {
@@ -244,8 +245,8 @@ img {
 
 
 .timeBtn {
-  background: transparent;
-  border-color: var(--button-colour);
+  background: var(--bg-dark);
+  border-color: #c4dde4;
   margin-left: -2px;
 }
 
@@ -277,6 +278,7 @@ img {
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 40px;
+  color: rgb(179,179,179,1);
 }
 
 
@@ -441,14 +443,18 @@ input {
   }
 
   
+  
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .container-fluid {
     display: grid;
   }
+  .chartText {
+    text-align: center;
+  }
   
   .row {
-    margin: 0 -7px;
+    margin: 10px -23px;
   }
 
   .logIn-btn {
@@ -520,10 +526,3 @@ input {
     width: 20rem;
   }
 }};
-
-@media only screen and (max-width: 448px) {
-  .logo {
-    height: 5rem;
-    width: 20rem;
-  }
-}

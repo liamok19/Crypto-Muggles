@@ -1,23 +1,31 @@
 var logo = document.getElementById('logo');
 var currentTime = document.querySelector(".currentTime");
 var login = document.querySelector(".logIn-btn")
-var title = document.querySelector(".text-light");
+var title = document.querySelector(".title");
+var newstitle = document.querySelector(".newstitle");
+var chart = document.querySelector(".chartText");
+var signUp = document.querySelector("#signUpLine")
 // // Access toggle switch HTML element
 chk.addEventListener('change', () => {
 	document.body.classList.toggle('light');
 	if (document.body.classList.contains('light')){
 		logo.src = "./assets/images/logo-light.png";
-		logo.style.height = '10.5rem';
+		logo.style.height = '7rem';
 		currentTime.style.color = "#202125";
 		login.style.color = "#202125";
-		title.style.color = "#202125!important";
+		title.style.color = "#202125";
+		newstitle.style.color = "#202125";
+		signUp.style.color = "#202125";
 		
 	}else{
 		logo.src = "./assets/images/headerIcon.png"
-		logo.setAttribute("style", "width:30rem;")
+		logo.setAttribute("style", "width:30rem;");
 		currentTime.style.color = "#fcfcfc";
 		login.style.color = "#fcfcfc";
-		title.style.color = "#f8f9fa!important";
+		title.style.color = "rgb(179,179,179,1)";
+		newstitle.style.color = "rgb(179,179,179,1)";
+		signUp.style.color = "rgb(179,179,179,1)";
+
 		
 	}
 });
