@@ -21,7 +21,7 @@ I want to review the current cryptocurrency market
 so that I can review the latest trends and news
 
 When the user navigates the time 
-I am presented with the time in the header. 
+I am presented with the time ticking in the header accordidng to their local time. 
 
 When the user is presented with the market chart
 I am presented with the coin names, real-life updates of the USD price, and real-life updates of the price change percentage.
@@ -60,8 +60,26 @@ I am able to put in my name and email and saved it to local storage.
 ## Strategy 
 | Task       | Progress      | 
 | ------------- |:-------------:| 
-| Github title | Not yet  Start| 
-
+| Research on APIs News and Coin  | Complete | 
+| Chart Visualisation - Research | Complete |
+| Building HTML | Complete | 
+| Wireframing | Complete |
+| Website Concept/Design | Complete | 
+| Basic (rough) styling of CSS | Complete | 
+| Media Query (header, body, footer) | In Progress | 
+| Market Cap/Container Top 5 from API - Incuding click function | Complete | 
+| Market Container - change conolour of perecentage. Red for decrease in value, green for increas in value | Complete |
+Market Container - Link coin to market | Complete | 
+| News Container - Display top 5 and fecth time of the article, the source (creator) and title | Complete 
+| News Container - click function | Complete |
+| News Container - fetch URL article link and apply it to the click function | Complete | 
+| Light to Dark Mode Switch button - change background style colour | Complete | 
+| Hover box for signup | Complete | 
+| Hover styling - for coing and news click | Complete | 
+| Assign the link to Social Media | Complete | 
+| Sign up function to story the users name in Local Storage | Complete | 
+| Styling - colour hover to the coin and news row | 
+| Button switch from Coin chart to News chart | No longer Required | 
 
 ## Reference
 
