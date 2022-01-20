@@ -3,6 +3,10 @@
 ## Logo
 <img src="assets/images/CryptoMugglesIcon.png" width=351 height=249 alt="cryptomuggle-logo">
 
+## Deployed Link
+
+https://liamok19.github.io/Crypto-Muggles/
+
 ## Description 
 
 Our website features the top 5 trendy cryptocurrency and showcases their updates including their pricing and price change percentage. Cryptomuggles has a special feature of showing the market price and price change percentage of these coin in real time as well as having news realted to cryptocurrency in the same page.
@@ -44,7 +48,7 @@ I am able to put in my name and email and saved it to local storage.
 
 
 ## Team Roles 
-1. Liam O'Kane - Team Leader
+1. Liam O'Kane - Team Leader & Javascript
 2. Tirta Styadi - Styling
 3. Theresa Levina Gunawan  - Javascript
 4. Daniele Longo - Styling
@@ -66,7 +70,7 @@ I am able to put in my name and email and saved it to local storage.
 | Wireframing | Complete |
 | Website Concept/Design | Complete | 
 | Basic (rough) styling of CSS | Complete | 
-| Media Query (header, body, footer) | In Progress | 
+| Media Query (header, body, footer) | Complete | 
 | Market Cap/Container Top 5 from API - Incuding click function | Complete | 
 | Market Container - change conolour of perecentage. Red for decrease in value, green for increas in value | Complete |
 Market Container - Link coin to market | Complete | 
@@ -89,9 +93,9 @@ https://binance-docs.github.io/apidocs/spot/en/#change-log
 
 https://getbootstrap.com/
 
-https://momentjs.com/
-
 https://fonts.google.com/
+
+https://www.tradingview.com/HTML5-stock-forex-bitcoin-charting-library/
 
 Douglas Chan - TA
 
