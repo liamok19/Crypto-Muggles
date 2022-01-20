@@ -21,7 +21,7 @@ I want to review the current cryptocurrency market
 so that I can review the latest trends and news
 
 When the user navigates the time 
-I am presented with the time in the header. 
+I am presented with the time ticking in the header accordidng to their local time. 
 
 When the user is presented with the market chart
 I am presented with the coin names, real-life updates of the USD price, and real-life updates of the price change percentage.
