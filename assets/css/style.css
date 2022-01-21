@@ -145,6 +145,10 @@ section {
   color: var(--bg-color);
 }
 
+#greeting {
+  color: var(--primary-font-col);
+  font-size: 25px;
+}
 
 /* Switcher Button */
 body.light {
@@ -317,10 +321,6 @@ input {
 }
 
 
-
-#fullName{
-  color: #fcfcfc;
-}
 
 /* FOOTER */
 .socialMedia {
