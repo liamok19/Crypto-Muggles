@@ -4,7 +4,9 @@ var login = document.querySelector(".logIn-btn")
 var title = document.querySelector(".title");
 var newstitle = document.querySelector(".newstitle");
 var chart = document.querySelector(".chartText");
-var signUp = document.querySelector("#signUpLine")
+var signUp = document.querySelector("#signUpLine");
+var greeting = document.getElementById('greeting');
+
 // // Access toggle switch HTML element
 chk.addEventListener('change', () => {
 	document.body.classList.toggle('light');
@@ -16,6 +18,7 @@ chk.addEventListener('change', () => {
 		title.style.color = "#202125";
 		newstitle.style.color = "#202125";
 		signUp.style.color = "#202125";
+		greeting.style.color = "#202125";
 		
 	}else{
 		logo.src = "./assets/images/headerIcon.png"
@@ -25,6 +28,7 @@ chk.addEventListener('change', () => {
 		title.style.color = "rgb(179,179,179,1)";
 		newstitle.style.color = "rgb(179,179,179,1)";
 		signUp.style.color = "rgb(179,179,179,1)";
+		greeting.style.color = "rgb(179,179,179,1)";
 
 		
 	}
