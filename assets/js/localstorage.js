@@ -30,10 +30,16 @@ function renderName() {
     }
 }
 
+function clearArea() {
+    fullName.value = "";
+    email.value = "";
+}
+
 // created a click event listener
 signUpBtnEl.addEventListener("click", function (event) {
     event.preventDefault();
     saveUserInfo();
     renderName();
+    clearArea();
 });
 
