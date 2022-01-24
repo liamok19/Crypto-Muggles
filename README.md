@@ -9,9 +9,11 @@ https://liamok19.github.io/Crypto-Muggles/
 
 ## Description 
 
-Our website features the top 5 trendy cryptocurrency and showcases their updates including their pricing and price change percentage. Cryptomuggles has a special feature of showing the market price and price change percentage of these coin in real time as well as having news related to cryptocurrency in the same page.
+Our website features the top 5 trendy cryptocurrency and showcases their updates including their pricing and price change percentage. Cryptomuggles has a special feature of showing the market price and price change percentage of these coin in real time as well as having news related to cryptocurrency in the same page. The news distribute the top 5 latest articles around the topic. 
 
 For each coin, we also have respective charts for the progression of the chart within the timeframe of one minute, one day, and one week. Our chart functions optimally for users as they can zoom in and out of the chart for specific values the user wants to inspect.
+
+For each article disributed the user is allowed to be sent to the article page that they have clicked on. Currently there are region and language parameters around the top 5, it is a live version of news around cryptocurrency. 
 
 An extra feature that we have is having a sign up feature for people to join our cryptomuggle community and get updates regarding any significant price changes or news about a certain coin. 
 
@@ -85,7 +87,7 @@ Market Container - Link coin to market | Complete |
 | Hover styling - for coing and news click | Complete | 
 | Assign the link to Social Media | Complete | 
 | Sign up function to story the users name in Local Storage | Complete | 
-| Styling - colour hover to the coin and news row | 
+| Styling - colour hover to the coin and news row | Complete |
 | Button switch from Coin chart to News chart | No longer Required | 
 
 
