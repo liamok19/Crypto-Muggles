@@ -13,6 +13,8 @@ Our website features the top 5 trendy cryptocurrency and showcases their updates
 
 For each coin, we also have respective charts for the progression of the chart within the timeframe of one minute, one day, and one week. Our chart functions optimally for users as they can zoom in and out of the chart for specific values the user wants to inspect.
 
+Each news article allows the user to click and be sent to the article website. Current the news display features based on the region and language parameters. 
+
 An extra feature that we have is having a sign up feature for people to join our cryptomuggle community and get updates regarding any significant price changes or news about a certain coin. 
 
 We aim to satisfy our users and we always value them to make sure they always get a quality user experience.
@@ -85,7 +87,7 @@ Market Container - Link coin to market | Complete |
 | Hover styling - for coing and news click | Complete | 
 | Assign the link to Social Media | Complete | 
 | Sign up function to story the users name in Local Storage | Complete | 
-| Styling - colour hover to the coin and news row | 
+| Styling - colour hover to the coin and news row | Complete |
 | Button switch from Coin chart to News chart | No longer Required | 
 
 
