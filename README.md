@@ -54,6 +54,9 @@ I am able to put in my name and email and saved it to local storage.
 
 ## Team Roles 
 1. Liam O'Kane - Team Leader & Javascript
+    1. Github: https://github.com/liamok19 
+    2. Email: liamokane19@gmail.com
+    3. Portfolio: https://liamok19.github.io/liamo_portfolio/ 
 2. Tirta Styadi - Styling
 3. Theresa Levina Gunawan  - Javascript
 4. Daniele Longo - Styling
