@@ -59,6 +59,9 @@ I am able to put in my name and email and saved it to local storage.
     3. Portfolio: https://liamok19.github.io/liamo_portfolio/ 
 2. Tirta Styadi - Styling
 3. Theresa Levina Gunawan  - Javascript
+    1. Github: https://github.com/levigun
+    2. Email: t.levina31@gmail.com
+    3. Protfolio: https://liamok19.github.io/portfolio/ 
 4. Daniele Longo - Styling
 5. Syed Hasnat - Javascript
 
