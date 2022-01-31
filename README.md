@@ -9,11 +9,11 @@ https://liamok19.github.io/Crypto-Muggles/
 
 ## Description 
 
-Our website features the top 5 trendy cryptocurrency and showcases their updates including their pricing and price change percentage. Cryptomuggles has a special feature of showing the market price and price change percentage of these coin in real time as well as having news related to cryptocurrency in the same page.
+Our website features the top 5 trendy cryptocurrency and showcases their updates including their pricing and price change percentage. Cryptomuggles has a special feature of showing the market price and price change percentage of these coin in real time as well as having news related to cryptocurrency in the same page. The news distribute the top 5 latest articles around the topic. 
 
 For each coin, we also have respective charts for the progression of the chart within the timeframe of one minute, one day, and one week. Our chart functions optimally for users as they can zoom in and out of the chart for specific values the user wants to inspect.
 
-Each news article allows the user to click and be sent to the article website. Current the news display features based on the region and language parameters. 
+For each article disributed the user is allowed to be sent to the article page that they have clicked on. Currently there are region and language parameters around the top 5, it is a live version of news around cryptocurrency. 
 
 An extra feature that we have is having a sign up feature for people to join our cryptomuggle community and get updates regarding any significant price changes or news about a certain coin. 
 
@@ -54,6 +54,9 @@ I am able to put in my name and email and saved it to local storage.
 
 ## Team Roles 
 1. Liam O'Kane - Team Leader & Javascript
+    1. Github: https://github.com/liamok19 
+    2. Email: liamokane19@gmail.com
+    3. Portfolio: https://liamok19.github.io/liamo_portfolio/ 
 2. Tirta Styadi - Styling
 3. Theresa Levina Gunawan  - Javascript
 4. Daniele Longo - Styling
